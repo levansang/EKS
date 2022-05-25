@@ -18,7 +18,7 @@ module "eks" {
   }
 
   vpc_id = var.VPC_ID
-  subnet_ids = ["subnet-0fece53823c17eabe"]
+  subnet_ids = ["subnet-0fece53823c17eabe","subnet-09a93b99cabfdd103"]
 
  # Self Managed Node Group(s)
   self_managed_node_group_defaults = {
@@ -72,7 +72,7 @@ module "eks" {
       desired_size = 1
 
       instance_types = ["t2.medium"]
-      capacity_type  = "On-demand"
+      capacity_type  = "ON_DEMAND"
     }
   }
   tags = {

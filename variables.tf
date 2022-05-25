@@ -40,7 +40,7 @@ variable "aws_iam_role_name" {
 
 variable "cluster_name" {
   description = "eks cluster name"
-  default = "TMS"
+  default = "TMS01"
 }
 
 variable "vpn_private_subnets" {
